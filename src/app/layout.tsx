@@ -28,6 +28,9 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+        <header>Brian Camuñez Benitez</header>
+        <main></main>
+        <footer></footer>
       </body>
     </html>
   );
