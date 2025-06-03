@@ -5,9 +5,17 @@ import Peliculas from "../components/Peliculas";
 const MovieExplorer = () => {
 
     return (
-        <>
-            <h1 className="text-white">Vista</h1>
-            <div className='text-white flex'>
+        <div className="text-white">
+            <h1 className="text-3xl font-bold py-4">Movie Explorer</h1>
+            <div className="w-[40%] mb-4 flex">
+                <div className="w-[50%] bg-blue-950 p-2 text-center rounded-[10px]">
+                    <h2>Populares</h2>
+                </div>
+                <div className="w-[50%] bg-blue-700 p-2 text-center rounded-[10px]">
+                    <h2>Favoritas</h2>
+                </div>
+            </div>
+            <div className=' flex'>
                 <div className='w-[40%]'>
                     <Peliculas />
                 </div>
@@ -16,7 +24,7 @@ const MovieExplorer = () => {
                     <p>Selecciona una película para ver sus detalles.</p>
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 
